@@ -1,0 +1,872 @@
+/* =========================================================
+   DAISYDREAM - FIXED DESKTOP WEBSITE
+   FULL SCREEN WIDTH
+   FIXED CONTENT SIZE
+   CENTERED
+   NO RESPONSIVE SHRINK
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: auto;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+    width: 1200px;
+    min-width: 1200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    min-width: 1200px;
+    padding: 18px 0;
+}
+
+.nav-content {
+    width: 1200px;
+    min-width: 1200px;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+.navbar nav a {
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+    width: 100%;
+    min-width: 1200px;
+    background: #FAF8F5;
+    color: #292929;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+    width: 100%;
+    min-width: 1200px;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    background: #F4EFEA;
+    border-bottom: 1px solid #E5DED8;
+}
+
+.home-hero-container {
+    width: 1200px;
+    min-width: 1200px;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 75px 22px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 620px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #A8785C;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+
+    color: #292929;
+
+    font-size: 52px;
+    line-height: 1.12;
+
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-content h1 span {
+    color: #A8785C;
+    font-style: italic;
+}
+
+.hero-content p {
+    max-width: 590px;
+
+    margin: 0 0 30px;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: nowrap;
+}
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.hero-btn-primary {
+    background: #A8785C;
+    border: 1px solid #A8785C;
+
+    color: #FFFFFF;
+}
+
+.hero-btn-primary:hover {
+    background: #93694F;
+    border-color: #93694F;
+}
+
+.hero-btn-secondary {
+    background: #FFFFFF;
+
+    border: 1px solid #D5CDC7;
+
+    color: #4A4A4A;
+}
+
+.hero-btn-secondary:hover {
+    border-color: #A8785C;
+    color: #A8785C;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image {
+    width: 100%;
+    height: 410px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #E9E1DB;
+
+    border: 1px solid #DED5CF;
+
+    box-shadow: 0 12px 30px rgba(40, 35, 30, 0.08);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   COMMON HOME CONTAINER
+========================================================= */
+
+.home-container {
+    width: 1160px;
+    min-width: 1160px;
+    max-width: 1160px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-section {
+    width: 100%;
+    min-width: 1200px;
+
+    padding: 75px 20px;
+
+    background: #FFFFFF;
+}
+
+.section-heading {
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #A8785C;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+
+    color: #292929;
+
+    font-size: 34px;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+    padding: 28px 22px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E5E0DC;
+
+    border-radius: 9px;
+
+    box-shadow: 0 5px 18px rgba(40, 35, 30, 0.04);
+}
+
+.service-number {
+    margin-bottom: 18px;
+
+    color: #A8785C;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.service-card h3 {
+    margin: 0 0 10px;
+
+    color: #292929;
+
+    font-size: 19px;
+}
+
+.service-card p {
+    margin: 0;
+
+    color: #6D6D6D;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   UPCOMING EVENTS
+========================================================= */
+
+.upcoming-section {
+    width: 100%;
+    min-width: 1200px;
+
+    padding: 75px 20px;
+
+    background: #FAF8F5;
+}
+
+.upcoming-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+.upcoming-heading h2 {
+    margin: 0 0 8px;
+
+    color: #292929;
+
+    font-size: 32px;
+}
+
+.upcoming-heading p {
+    margin: 0;
+
+    color: #727272;
+
+    font-size: 14px;
+}
+
+.view-all {
+    color: #A8785C;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.view-all:hover {
+    color: #93694F;
+}
+
+
+/* =========================================================
+   EVENT GRID
+========================================================= */
+
+.home-events-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.home-event-card {
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E4DED9;
+
+    border-radius: 9px;
+
+    box-shadow: 0 5px 18px rgba(40, 35, 30, 0.05);
+}
+
+
+/* =========================================================
+   EVENT IMAGE
+========================================================= */
+
+.home-event-image {
+    width: 100%;
+    height: 185px;
+
+    background: #EEE8E3;
+}
+
+.home-event-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.home-event-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #A8785C;
+
+    background: #F0EAE5;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+========================================================= */
+
+.home-event-content {
+    padding: 21px;
+}
+
+.home-event-date {
+    margin-bottom: 9px;
+
+    color: #A8785C;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+    text-transform: uppercase;
+}
+
+.home-event-content h3 {
+    margin: 0 0 10px;
+
+    color: #292929;
+
+    font-size: 19px;
+}
+
+.home-event-content p {
+    margin: 0 0 18px;
+
+    color: #6E6E6E;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+.home-event-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    border: 1px solid #A8785C;
+
+    border-radius: 6px;
+
+    background: #A8785C;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.home-event-btn:hover {
+    background: #93694F;
+
+    border-color: #93694F;
+}
+
+
+/* =========================================================
+   EMPTY EVENTS
+========================================================= */
+
+.home-events-empty {
+    padding: 55px 25px;
+
+    text-align: center;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E4DED9;
+
+    border-radius: 9px;
+}
+
+.home-events-empty h3 {
+    margin: 0 0 10px;
+
+    color: #292929;
+
+    font-size: 21px;
+}
+
+.home-events-empty p {
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.home-cta {
+    width: 100%;
+    min-width: 1200px;
+
+    padding: 70px 20px;
+
+    background: #FFFFFF;
+
+    border-top: 1px solid #E8E3DF;
+}
+
+.home-cta-box {
+    width: 1050px;
+    min-width: 1050px;
+    max-width: 1050px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 48px 45px;
+
+    text-align: center;
+
+    background: #F4EFEA;
+
+    border: 1px solid #E2D9D2;
+
+    border-radius: 10px;
+}
+
+.home-cta-box h2 {
+    margin: 0 0 12px;
+
+    color: #292929;
+
+    font-size: 30px;
+}
+
+.home-cta-box p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: #6D6D6D;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   AUTH PAGE
+========================================================= */
+
+.auth-wrapper {
+    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.auth-info {
+    padding: 55px 45px;
+}
+
+.auth-card {
+    width: 100%;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   GENERAL GRIDS
+========================================================= */
+
+.hero-grid,
+.intro-grid,
+.details-grid,
+.booking-grid,
+.contact-grid,
+.profile-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+.services-grid,
+.why-grid,
+.steps-grid,
+.dashboard-grid,
+.services-about-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.events-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.details-image,
+.booking-summary {
+    position: sticky;
+
+    top: 20px;
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+}
+
+.details-content h1 {
+    font-size: 32px;
+}
+
+.details-price {
+    font-size: 32px;
+}
+
+
+/* =========================================================
+   EVENTS ACTION
+========================================================= */
+
+.event-actions {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-field {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 15px;
+}
+
+.profile-field strong {
+    text-align: right;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-card {
+    overflow-x: visible;
+}
+
+.table-card table {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CTA COMMON
+========================================================= */
+
+.cta-section {
+    padding: 60px 40px;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+}
+
+
+/* =========================================================
+   IMPORTANT
+   NO RESPONSIVE MEDIA QUERY
+========================================================= */
+
+/*
+   Do NOT add:
+
+   @media (max-width: 950px)
+   @media (max-width: 700px)
+   @media (max-width: 450px)
+
+   Website layout will remain fixed.
+*/

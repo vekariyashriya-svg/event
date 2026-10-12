@@ -1,0 +1,42 @@
+@media (max-width: 1000px) {
+    .hero-grid, .intro-grid, .details-grid, .booking-grid, .contact-grid, .profile-grid { grid-template-columns: 1fr; gap: 40px; }
+    .services-grid, .why-grid, .steps-grid, .dashboard-grid, .services-about-grid { grid-template-columns: repeat(2, 1fr); }
+    .events-grid { grid-template-columns: repeat(2, 1fr); }
+    .auth-wrapper { grid-template-columns: 1fr; }
+    .auth-info { padding: 45px 35px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .details-image, .booking-summary { position: static; }
+    .hero h1 { font-size: 42px; }
+}
+@media (max-width: 700px) {
+    .navbar { padding: 15px 0; }
+    .nav-content { flex-direction: column; gap: 15px; }
+    .navbar nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .section { padding: 50px 0; }
+    .hero { padding: 50px 0; }
+    .hero h1 { font-size: 34px; }
+    .section-header h2 { font-size: 28px; }
+    .page-header h1 { font-size: 32px; }
+    .events-grid, .services-grid, .why-grid, .steps-grid, .dashboard-grid, .services-about-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .details-info { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .auth-card, .auth-info, .booking-form-card, .contact-form-card, .contact-info, .profile-main { padding: 30px 22px; }
+    .cta-section { padding: 50px 25px; }
+    .cta-section h2 { font-size: 28px; }
+    .event-actions { flex-direction: column; }
+    .profile-field { flex-direction: column; gap: 5px; }
+    .profile-field strong { text-align: left; }
+    .table-card { overflow-x: auto; }
+    .table-card table { min-width: 600px; }
+}
+@media (max-width: 450px) {
+    .container { width: 94%; }
+    .logo { font-size: 24px; }
+    .hero h1 { font-size: 30px; }
+    .section-header h2 { font-size: 24px; }
+    .page-header h1 { font-size: 28px; }
+    .navbar nav a { font-size: 13px; }
+    .details-content h1 { font-size: 28px; }
+    .details-price { font-size: 28px; }
+}
